@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Reliability Checker",
+  "description": "Tells you how reliable the news pages you visit are.",
+  "version": "1.0",
+  "background": {
+    "scripts": ["popup.js"]
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "Bemoji16.png",
+      "48": "Bemoji48.png",
+      "128": "Bemoji128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Reliability Checker"
+  },
+
+  "permissions": [
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "declarativeContent", "activeTab"
+
+  ]
+
+}

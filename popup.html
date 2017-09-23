@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Bias Checker Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width: 300px;
+        height: 200px;
+
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+
+  </head>
+  <body>
+    <h2 id="reliability">
+
+    </h2>
+    <h5 id= "smut_warning">
+
+    </h5>
+    <p id="blurb">
+
+    </p>
+
+    
+    <p id="info">
+      More Info:
+    </p>
+    <a id="wiki" target="_blank">Wikipedia Page</a>
+    <style>
+    #blurb{
+      font-size: 12px;
+      color: black;
+    }
+    #info{
+      font-weight: bold;
+      font-size: 14px;
+    }
+    #smut_warning{
+      font-weight: bold;
+      color: red;
+    }
+    </style>
+  </body>
+  <script src="popup.js"></script>
+</html>
